@@ -89,7 +89,7 @@
             bindings = <
 &kp EXCLAMATION       &kp AT           &kp HASH         &kp INT_YEN      &kp PERCENT                                          &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp NUMBER_1          &kp NUMBER_2     &kp NUMBER_3     &kp NUMBER_4     &kp N5       &kp LC(LA(KP_NUMBER_0))      &kp MINUS  &kp NUMBER_6      &kp N7             &kp N8          &kp N9                &kp N0
-&mt LEFT_SHIFT SLASH  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp EQUAL                    &kp COMMA  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
+&mt LEFT_SHIFT SLASH  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp EQUAL                    &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
 &trans                &trans           &trans           &trans           &trans       &trans                       &kp SPACE  &kp ENTER                                                                  &kp PIPE
             >;
         };
