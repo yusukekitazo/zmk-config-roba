@@ -40,6 +40,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        home {
+            bindings = <&kp C_AC_DESKTOP_SHOW_ALL_WINDOWS>;
+            key-positions = <36 17>;
+        };
     };
 
     macros {
