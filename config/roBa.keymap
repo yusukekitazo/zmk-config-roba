@@ -67,10 +67,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W     &kp E     &kp R                              &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A           &kp S     &kp D     &kp F                              &kp G        &trans                             &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt CAPSLOCK Z  &kp X     &kp C     &kp V                              &kp B        &kp LEFT_SHIFT                     &kp BACKSPACE  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL       &kp LALT  &kp LWIN  &lt_to_layer_0 6 C_AL_MY_COMPUTER  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp SPACE      &lt 1 ENTER                             &kp AT
+&kp Q           &kp W     &kp E     &kp R                                           &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A           &kp S     &kp D     &kp F                                           &kp G        &trans                             &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
+&mt CAPSLOCK Z  &kp X     &kp C     &kp V                                           &kp B        &kp LEFT_SHIFT                     &kp BACKSPACE  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL       &kp LALT  &kp LWIN  &lt_to_layer_0 6 C_AC_DESKTOP_SHOW_ALL_WINDOWS  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp SPACE      &lt 1 ENTER                             &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -87,10 +87,10 @@
 
         NUM {
             bindings = <
-&kp EXCLAMATION       &kp AT           &kp HASH         &kp INT_YEN      &kp PERCENT                                          &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp NUMBER_1          &kp NUMBER_2     &kp NUMBER_3     &kp NUMBER_4     &kp N5       &kp LC(LA(KP_NUMBER_0))      &kp MINUS  &kp NUMBER_6      &kp N7             &kp N8          &kp N9                &kp N0
-&mt LEFT_SHIFT SLASH  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp EQUAL                    &kp COMMA  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                &trans           &trans           &trans           &trans       &trans                       &kp SPACE  &kp ENTER                                                                  &kp PIPE
+&kp EXCLAMATION       &kp AT           &kp HASH         &kp INT_YEN      &kp PERCENT                                          &kp CARET       &kp AMPERSAND  &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp NUMBER_1          &kp NUMBER_2     &kp NUMBER_3     &kp NUMBER_4     &kp N5       &kp LC(LA(KP_NUMBER_0))      &kp MINUS  &kp NUMBER_6    &kp N7         &kp N8          &kp N9                &kp N0
+&mt LEFT_SHIFT SLASH  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp EQUAL                    &kp COMMA  &mmv MOVE_LEFT  &mmv MOVE_UP   &mmv MOVE_DOWN  &mmv MOVE_RIGHT       &kp BACKSLASH
+&trans                &trans           &trans           &trans           &trans       &trans                       &kp SPACE  &kp ENTER                                                            &kp PIPE
             >;
         };
 
@@ -107,10 +107,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans          &mkp MB1      &mkp MB2        &mkp MB3         &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans          &mkp MB1      &mkp MB2        &mkp MB3         &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                         &trans
             >;
         };
 
