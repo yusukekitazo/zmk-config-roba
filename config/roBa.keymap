@@ -26,7 +26,7 @@
         home: home {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp H>;
+            bindings = <&kp RIGHT_COMMAND &kp H>;
             label = "HOME";
         };
     };
