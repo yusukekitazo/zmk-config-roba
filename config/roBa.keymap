@@ -29,6 +29,20 @@
             bindings = <&kp RIGHT_COMMAND &kp H>;
             label = "HOME";
         };
+
+        leftcarsol: upcarsol {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_COMMAND &kp LEFT_ARROW>;
+            label = "UPCARSOL";
+        };
+
+        rightcarsol: rightcarsol {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_COMMAND &kp RIGHT>;
+            label = "RIGHTCARSOL";
+        };
     };
 
     behaviors {
@@ -76,10 +90,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE        &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &trans
-&kp LEFT_COMMAND  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &mkp LCLK       &msc SCRL_DOWN  &mkp RCLK        &trans
-&kp LEFT_SHIFT    &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans          &trans          &trans           &trans
-&trans            &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                   &trans
+&kp ESCAPE        &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans                       &trans  &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &trans
+&kp LEFT_COMMAND  &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans      &trans  &trans  &mkp LCLK       &msc SCRL_DOWN  &mkp RCLK        &trans
+&kp LEFT_SHIFT    &leftcarsol      &trans          &rightcarsol     &trans   &trans      &trans  &trans  &trans          &trans          &trans           &trans
+&trans            &trans           &trans          &trans           &trans   &trans      &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
