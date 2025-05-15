@@ -56,6 +56,8 @@
 &mt LEFT_SHIFT SLASH  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp EQUAL                    &kp COMMA  &trans        &trans         &trans     &trans                &kp BACKSLASH
 &trans                &trans           &trans           &trans           &trans       &trans                       &kp SPACE  &kp ENTER                                                     &kp PIPE
             >;
+
+            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         ARROW {
